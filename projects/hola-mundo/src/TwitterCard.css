@@ -4,6 +4,7 @@
     min-width: 20rem;
     max-width: 100%;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .tw-userData{
@@ -51,6 +52,7 @@
 .tw-followButton--following {
     border: 1px;
     border-color: red;
+    width: 148px;
 
     border-radius: 100rem;
     border: 0;
@@ -63,6 +65,21 @@
 }
 
 .tw-followButton--following:hover {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.088);
+    color: red;
+    border: red 1px solid;
     transition: .3s ease background-color;
+}
+
+.tw-followButton--following:hover .tw-followButton-text {
+    display: none;
+}
+
+
+.tw-followButton-stopFollowing{
+    display: none;
+}
+
+.tw-followButton--following:hover .tw-followButton-stopFollowing {
+    display: block;
 }
