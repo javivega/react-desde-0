@@ -1,0 +1,68 @@
+.tw-userCard {
+    display: flex;
+    align-items: center;
+    min-width: 20rem;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.tw-userData{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tw-userDataText{
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-userDataText strong{
+    font-size: 1.2rem;
+}
+
+.tw-userDataText span{
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.tw-userAvatar{
+    border-radius: 100rem;
+    width: 3rem;
+}
+
+.tw-followButton{
+    border-radius: 100rem;
+    border: 0;
+    font-size: 1rem;
+    padding: 0.35rem 0.75rem;
+    background-color: #eee;
+    color: #222;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.tw-followButton:hover{
+    background-color: #858585;
+    transition: .3s ease background-color;
+}
+
+.tw-followButton--following {
+    border: 1px;
+    border-color: red;
+
+    border-radius: 100rem;
+    border: 0;
+    font-size: 1rem;
+    padding: 0.35rem 0.75rem;
+    background-color: #eee;
+    color: #222;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tw-followButton--following:hover {
+    background-color: red;
+    transition: .3s ease background-color;
+}
